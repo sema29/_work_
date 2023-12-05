@@ -1,4 +1,7 @@
 Install all the packages  :  npm install
+
+
+
 Run to see if everything is okey :  npm run dev
 
 

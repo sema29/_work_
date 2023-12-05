@@ -1,11 +1,11 @@
 {
   "name": "work",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "start:build:": "tsc -w",
     "start:run": "nodemon ./dist/index.js",
-    "start": "node src/index.ts",
+    "start": "node dist/index.ts",
     "build": "tsc",
     "dev": "ts-node-dev src/index.ts"
   },

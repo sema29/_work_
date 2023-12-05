@@ -4,10 +4,10 @@
   "main": "dist/index.js",
   "scripts": {
     "start:build:": "tsc -w",
-    "start:run": "nodemon ./dist/index.js",
+    "start:run": "nodemon dist/index.js",
     "start": "node dist/index.ts",
     "build": "tsc",
-    "dev": "ts-node-dev src/index.ts"
+    "dev": "ts-node-dev dist/index.ts"
   },
   "author": "Sema Nur Boz",
   "license": "ISC",

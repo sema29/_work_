@@ -77,9 +77,12 @@ async function getApiData() {
         },
       };
 
-      if (await Data.find(filter)) {
-        await Data.findOneAndUpdate(filter, updateData, { new: true });
-      } else await Data.create(newData);
+      const existingData = await Data.findOneAndUpdate(filter, updateData, { new: true });
+
+      if (!existingData ) {
+        await Data.create(newData)
+      
+      }
     }
   } catch (error) {
     console.error(error);

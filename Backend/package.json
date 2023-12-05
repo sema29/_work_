@@ -4,7 +4,7 @@
   "main": "src/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node src/index.js"
+    "start": "npm run dev"
   },
   "author": "Sema Nur Boz",
   "license": "ISC",

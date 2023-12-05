@@ -1,7 +1,5 @@
-Install all the packages
-           npm install
-Run to see if everything is ok
-           npm run dev
+Install all the packages  :  npm install
+Run to see if everything is okey :  npm run dev
 
 
 ![image](https://github.com/sema29/_work_/assets/77546926/c09b25fb-c6a3-4fa5-820d-436d4d1c127d)

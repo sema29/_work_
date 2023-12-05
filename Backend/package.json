@@ -4,10 +4,10 @@
   "main": "dist/index.js",
   "scripts": {
     "start:build:": "tsc -w",
-    "start:run": "nodemon dist/index.js",
-    "start": "node dist/index.ts",
+    "start:run": "nodemon ./dist/index.js",
+    "start": "concurrently npm:start:*",
     "build": "tsc",
-    "dev": "ts-node-dev dist/index.ts"
+    "dev": "ts-node-dev src/index.ts"
   },
   "author": "Sema Nur Boz",
   "license": "ISC",
@@ -24,6 +24,7 @@
     "morgan": "^1.10.0",
     "node-fetch": "^2.6.6",
     "nodemon": "^3.0.1"
+    "concurrently": "^8.2.2"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.29",

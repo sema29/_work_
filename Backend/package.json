@@ -1,16 +1,12 @@
 {
-  "name": "api_gateway",
+  "name": "work",
   "version": "1.0.0",
-  "description": "The api gateway for the data collection and the certification project",
   "main": "src/index.js",
   "scripts": {
-    "start:build:": "tsc -w",
-    "start:run": "nodemon ./dist/index.js",
-    "start": "concurrently npm:start:*",
     "build": "tsc",
-    "dev": "ts-node-dev src/index.ts"
+    "start": "node dist/index.js"
   },
-  "author": "Osman Ali CEKIC",
+  "author": "Sema Nur Boz",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",

@@ -2,6 +2,7 @@ import * as express from 'express';
 
 const db = require('./database/db');
 var cors = require('cors')
+const apiData = require("./apiData.controllers");
 
 const corsOptions ={
   origin:'*', 
@@ -17,12 +18,12 @@ app.use('*', cors(corsOptions))
 
 app.use(express.json());
 
-require('./routes/logging.routes')(app);
 
 app.get('/', (req, res) => {
   res.json({ message : 'API Gateway'});
 })
 
+app.get("/getAllData", apiData.getAllData);
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
